@@ -1,9 +1,9 @@
 // Game Constants & Variables
 let inputDir = {x: 0, y: 0}; 
-const foodSound = new Audio('music/food.mp3');
-const gameOverSound = new Audio('music/gameover.mp3');
-const moveSound = new Audio('music/move.mp3');
-const musicSound = new Audio('music/music.mp3');
+const foodSound = new Audio('/music files/food.mp3');
+const gameOverSound = new Audio('/music files/gameover.mp3');
+const moveSound = new Audio('/music files/move.mp3');
+const musicSound = new Audio('/music files/music.mp3');
 let speed = 5;
 let score = 0;
 let a = 2;
@@ -104,7 +104,7 @@ function gameEngine(){
 
 
 // Main logic starts here
-// musicSound.play();
+musicSound.play();
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
